@@ -12,6 +12,7 @@
         
         <!--==================== CSS ====================-->
         <link rel="stylesheet" href="./packages/css/styles.css">
+        <link rel="stylesheet" href="./packages/css/stylescustom.css">
 
         <title>Portfolio</title>
     </head>
@@ -129,7 +130,7 @@
                 <span class="section__subtitle">My Introduction</span>
 
                 <div class="about__container container grid">
-                    <img src="packages/images/Avatar3.jpg" alt="" class="about__img">
+                    <img src="packages/images/Avatar5.jpg" alt="" class="about__img">
                     <div class="about__data">
                         <p class="about__description">
                             Backend developer skilled in Node.js and Sping boot, ASP.NET, with experience in MySQL and MongoDB, focused on building scalable web solutions.
@@ -343,7 +344,60 @@
 
               <!--==================== QUALIFICATION ====================-->
        
-      
+<!--==================== PROJECTS ====================-->
+<section class="projects section" id="projects">
+    <h2 class="section__title">Projects</h2>
+    <span class="section__subtitle">Some of My Works</span>
+
+    <div class="swiper-container projects__container container grid" data-pagination=".swiper-pagination-project">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide project__data">
+                <h3 class="project__title">SocialMedia App</h3>
+                <!-- <img src="packages/images/.jpg" alt="Project 1" class="project__image"> -->
+                <p class="project__description">Developed a mobile social media application emphasizing user engagement and interaction.</p>
+                <p class="project__description">Implemented user authentication using Firebase Authentication to securely manage user accounts and access.</p>
+                <p class="project__description">Integrated real-time messaging features with Firebase Cloud Firestore, allowing users to send and receive messages instantly.</p>
+                <p class="project__description">Enhanced user experience by implementing profile customization options, including profile picture uploads and bio editing.</p>
+                <p class="project__description">Technologies Used: Java, Android Studio, Firebase Authentication, Firebase Cloud Firestore</p>
+                <p class="project__description">Date: March 2023</p>
+            </div>
+            
+            <div class="swiper-slide project__data">
+                <h3 class="project__title">Music - Clone Spotify</h3>
+                <img src="packages/images/Spotify.jpg" alt="Project 2" class="project__image">
+                <p class="project__description">Designed and developed a music streaming platform inspired by Spotify, focusing on user experience and music discovery.</p>
+                <p class="project__description">Implemented search and playback functionalities using PHP and Bootstrap, providing users with seamless access to their favorite music.</p>
+                <p class="project__description">Personalized music recommendations based on user preferences and listening history, enhancing user engagement and satisfaction.</p>
+                <p class="project__description">Developed user-friendly playlist management features, allowing users to create, edit, and share playlists with ease.</p>
+                <p class="project__description">Technologies Used: PHP, Bootstrap, MySQL</p>
+                <p class="project__description">Date: November 2023</p>
+            </div>
+            
+            <div class="swiper-slide project__data">
+                <h3 class="project__title">E-commerce Website (Current)</h3>
+                <img src="packages/images/Sell.jpg" alt="Project 3" class="project__image">
+                <p class="project__description">Currently developing a comprehensive e-commerce website with advanced user and admin functionalities.</p>
+                <p class="project__description">Implemented user authentication and authorization using JWT tokens for secure access to user-specific features and data.</p>
+                <p class="project__description">Designed responsive user interfaces with HTML/CSS and Bootstrap, ensuring optimal user experience across devices.</p>
+                <p class="project__description">Developed admin functionalities for managing products, orders, users, and inventory, providing administrators with full control over the platform.</p>
+                <p class="project__description">Utilized MongoDB for efficient data storage and retrieval, ensuring scalability and performance.</p>
+                <p class="project__description">Technologies Used: Node.js, Express.js, MongoDB, JWT Authentication, HTML/CSS, Bootstrap</p>
+                <p class="project__description">Date: March 2024 - Present</p>
+            </div>
+        </div>
+        <!-- add arrows-->
+        <div class="swiper-button-next">
+            <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+        </div>
+        <div class="swiper-button-prev">
+            <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+        </div>
+
+        <!-- Add Pagination -->
+        <div class="swiper-pagination-project" style="text-align: center;"></div>
+    </div>
+</section>
+
         <!--==================== SERVICES ====================-->
         <section class="services section" id="services">
             <h2 class="section__title">Services</h2>

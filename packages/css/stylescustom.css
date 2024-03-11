@@ -1,0 +1,75 @@
+/*==================== PROJECTS ====================*/
+.projects {
+    background-color: #f1f1f1;
+    padding: 4rem 0;
+}
+
+.projects__container {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+}
+
+.project__data {
+    background-color: #fff;
+    padding: 2rem; /* Điều chỉnh giá trị padding để không cách xa quá nhiều */
+    margin: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: calc(100% - 2rem); /* Điều chỉnh giá trị width để không cách xa quá nhiều */
+    position: relative;
+}
+
+.project__title {
+    color: black;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.project__image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0; 
+    object-fit: cover; 
+}
+
+.project__description {
+    color: rgb(39, 35, 35);
+    margin-bottom: 1.5rem;
+    word-wrap: break-word;
+}
+
+.project__description:hover {
+    overflow: visible;
+    white-space: normal;
+}
+
+.project__link {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project__link:hover {
+    text-decoration: underline;
+}
+
+.swiper-button-prev .swiper-project-icon::after,
+.swiper-button-next .swiper-project-icon::after {
+  content: "";
+}
+/* Điều chỉnh vị trí của nút previous */
+.swiper-button-prev {
+  left: -0.08rem;
+}
+
+/* Điều chỉnh vị trí của nút next */
+.swiper-button-next {
+  right: -0.08rem;
+}
+
+/* Loại bỏ viền xung quanh các nút và bullet */
+.swiper-button-prev,
+.swiper-button-next{
+  outline: none;
+}

@@ -110,6 +110,23 @@ let swiperPortfolio = new Swiper(".portfolio__container", {
   keyboard: true, */
 });
 
+ // Initialize Swiper for Projects
+let swiperProjects = new Swiper(".projects__container", {
+  cssMode: true,
+  loop: true,
+
+  navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+  },
+
+  pagination: {
+      el: ".swiper-pagination-project", // Fix the class name for pagination here
+      clickable: true,
+  }
+});
+
+
 /*==================== TESTIMONIAL ====================*/
 let swiperTestimonial = new Swiper(".testimonial__container", {
   loop: true,
@@ -210,3 +227,4 @@ themeButton.addEventListener("click", () => {
   localStorage.setItem("selected-theme", getCurrentTheme());
   localStorage.setItem("selected-icon", getCurrentIcon());
 });
+
