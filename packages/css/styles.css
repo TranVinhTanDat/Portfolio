@@ -787,6 +787,10 @@ img {
   margin-bottom: var(--mb-0-75);
 }
 
+.portfolio__project {
+  margin-bottom: var(--mb-0-75);
+}
+
 .portfolio__button:hover .button__icon {
   transform: translateX(0.25rem);
 }
