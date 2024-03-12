@@ -1,75 +1,96 @@
 /*==================== PROJECTS ====================*/
-.projects {
-    background-color: #f1f1f1;
-    padding: 4rem 0;
-}
-
 .projects__container {
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+    overflow: initial;
 }
 
-.project__data {
-    background-color: #fff;
-    padding: 2rem; /* Điều chỉnh giá trị padding để không cách xa quá nhiều */
-    margin: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: calc(100% - 2rem); /* Điều chỉnh giá trị width để không cách xa quá nhiều */
-    position: relative;
+.project__content {
+    padding: 0 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.project__img {
+    width: 265px;
+    border-radius: 0.5rem;
+    margin-right: 1.5rem; /* Margin between image and content */
+}
+
+.project__info {
+    flex: 1; /* Grow to fill available space */
 }
 
 .project__title {
-    color: black;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-}
-
-.project__image {
-    width: 100%;
-    height: auto;
-    border-radius: 8px 8px 0 0; 
-    object-fit: cover; 
+    color: #000;
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-0-5);
 }
 
 .project__description {
-    color: rgb(39, 35, 35);
-    margin-bottom: 1.5rem;
-    word-wrap: break-word;
+    color: #000;
+    margin-bottom: var(--mb-0-75);
 }
 
-.project__description:hover {
-    overflow: visible;
-    white-space: normal;
+.project__button:hover .button__icon {
+    transform: translateX(0.25rem);
 }
 
-.project__link {
-    color: #4CAF50;
-    text-decoration: none;
-    font-weight: bold;
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    content: "";
 }
 
-.project__link:hover {
-    text-decoration: underline;
+.swiper-project-icon {
+    font-size: 2rem;
+    color: var(--first-color);
 }
 
-.swiper-button-prev .swiper-project-icon::after,
-.swiper-button-next .swiper-project-icon::after {
-  content: "";
-}
-/* Điều chỉnh vị trí của nút previous */
 .swiper-button-prev {
-  left: -0.08rem;
+    left: -0.5rem;
 }
 
-/* Điều chỉnh vị trí của nút next */
 .swiper-button-next {
-  right: -0.08rem;
+    right: -0.5rem;
 }
 
-/* Loại bỏ viền xung quanh các nút và bullet */
+.swiper-container-horizontal > .swiper-pagination-bullets {
+    bottom: -2.5rem;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--first-color);
+}
+
 .swiper-button-prev,
-.swiper-button-next{
-  outline: none;
+.swiper-button-next,
+.swiper-pagination-bullet {
+    outline: none;
+}
+
+/* Responsive Design */
+
+/* For small devices */
+@media screen and (max-width: 576px) {
+    .project__content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .project__img {
+        margin-right: 0;
+        margin-bottom: 1rem; /* Add space between image and content on small screens */
+    }
+}
+
+/* For medium devices */
+@media screen and (min-width: 768px) {
+    .project__img {
+        width: 320px; /* Adjust image width for medium screens */
+    }
+}
+
+/* For large devices */
+@media screen and (min-width: 1024px) {
+    .project__img {
+        width: 400px; /* Adjust image width for large screens */
+    }
 }
